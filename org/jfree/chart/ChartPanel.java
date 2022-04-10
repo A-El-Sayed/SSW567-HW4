@@ -1892,8 +1892,8 @@ public class ChartPanel extends JPanel implements ChartChangeListener,
                 / scaledDataArea.getHeight();
 
             Plot gettingPlot = this.chart.getPlot();
-            if (p instanceof Zoomable) {
-                Zoomable z = (Zoomable) p;
+            if (gettingPlot instanceof Zoomable) {
+                Zoomable z = (Zoomable) gettingPlot;
                 if (z.getOrientation() == PlotOrientation.HORIZONTAL) {
                     z.zoomDomainAxes(vLower, vUpper, plotInfo, selectOrigin);
                     z.zoomRangeAxes(hLower, hUpper, plotInfo, selectOrigin);
