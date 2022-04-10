@@ -243,19 +243,18 @@ public abstract class ChartUtilities {
 
         BufferedImage image = new BufferedImage((int) desiredWidth, 
                 (int) desiredHeight, BufferedImage.TYPE_INT_ARGB);
-        //TODO- "short variable naming connvention. change name"
-        Graphics2D g2 = image.createGraphics();
+        Graphics2D graphics2D = image.createGraphics();
 
         if (scale) {
-            AffineTransform saved = g2.getTransform();
-            g2.transform(AffineTransform.getScaleInstance(scaleX, scaleY));
-            chart.draw(g2, new Rectangle2D.Double(0, 0, defaultWidth, 
+            AffineTransform saved = graphics2D.getTransform();
+            graphics2D.transform(AffineTransform.getScaleInstance(scaleX, scaleY));
+            chart.draw(graphics2D, new Rectangle2D.Double(0, 0, defaultWidth, 
                     defaultHeight), null, null);
-            g2.setTransform(saved);
-            g2.dispose();
+            graphics2D.setTransform(saved);
+            graphics2D.dispose();
         }
         else {
-            chart.draw(g2, new Rectangle2D.Double(0, 0, defaultWidth, 
+            chart.draw(graphics2D, new Rectangle2D.Double(0, 0, defaultWidth, 
                     defaultHeight), null, null);
         }
         out.write(encodeAsPNG(image));
