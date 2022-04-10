@@ -861,9 +861,8 @@ public class ChartPanel extends JPanel implements ChartChangeListener,
         if (flag) {
             Plot plot = this.chart.getPlot();
             if (plot instanceof Zoomable) {
-                //TODO - "change variable z to a name that explains what it does"
-                Zoomable z = (Zoomable) plot;
-                this.domainZoomable = flag && (z.isDomainZoomable());  
+                Zoomable zoom = (Zoomable) plot;
+                this.domainZoomable = flag && (zoom.isDomainZoomable());  
             }
         }
         else {
