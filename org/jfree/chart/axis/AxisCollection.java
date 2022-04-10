@@ -131,8 +131,7 @@ public class AxisCollection {
         if (edge.equals(RectangleEdge.TOP)) {
             this.axesAtTop.add(axis);
         }
-        //TODO - "Compare objects with equals() instead"
-        else if (edge == RectangleEdge.BOTTOM) {
+        else if (edge.equals(RectangleEdge.BOTTOM)) {
             this.axesAtBottom.add(axis);
         }
         else if (edge == RectangleEdge.LEFT) {
