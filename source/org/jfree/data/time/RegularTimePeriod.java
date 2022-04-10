@@ -165,6 +165,7 @@ public abstract class RegularTimePeriod implements TimePeriod, Comparable,
      * 
      * @deprecated This was a bad idea, don't use it!
      */
+    //TODO -"this was deprecated and shouldn't be used"
     public static final Calendar WORKING_CALENDAR 
         = Calendar.getInstance(DEFAULT_TIME_ZONE);
 
