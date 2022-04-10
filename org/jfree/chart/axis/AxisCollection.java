@@ -127,6 +127,8 @@ public class AxisCollection {
         if (edge == null) {
             throw new IllegalArgumentException("Null 'edge' argument.");   
         }
+
+        //TODO - "Compasre objects with equals() instead"
         if (edge == RectangleEdge.TOP) {
             this.axesAtTop.add(axis);
         }
