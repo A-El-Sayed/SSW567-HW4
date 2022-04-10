@@ -77,6 +77,7 @@ public class PieChartDemo1 extends ApplicationFrame {
      */
     private static PieDataset createDataset() {
         DefaultPieDataset dataset = new DefaultPieDataset();
+        //TODO - "PrimitiveWrapperInstantiation. use Double.valueOf() insead"
         dataset.setValue("One", new Double(43.2));
         dataset.setValue("Two", new Double(10.0));
         dataset.setValue("Three", new Double(27.5));
