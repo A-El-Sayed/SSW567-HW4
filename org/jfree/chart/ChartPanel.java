@@ -1890,7 +1890,7 @@ public class ChartPanel extends JPanel implements ChartChangeListener,
                 / scaledDataArea.getHeight();
             double vUpper = (scaledDataArea.getMaxY() - selection.getMinY()) 
                 / scaledDataArea.getHeight();
-
+                //TODO - "p is a short variable. Change it so that what it does is clear"
             Plot p = this.chart.getPlot();
             if (p instanceof Zoomable) {
                 Zoomable z = (Zoomable) p;
