@@ -243,6 +243,7 @@ public abstract class ChartUtilities {
 
         BufferedImage image = new BufferedImage((int) desiredWidth, 
                 (int) desiredHeight, BufferedImage.TYPE_INT_ARGB);
+        //TODO- "short variable naming connvention. change name"
         Graphics2D g2 = image.createGraphics();
 
         if (scale) {
