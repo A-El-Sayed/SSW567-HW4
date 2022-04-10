@@ -234,8 +234,7 @@ public abstract class ChartUtilities {
         boolean scale = false;
 
         // get desired width and height from somewhere then...
-        //TODO - "Useless parenthesis. Remove parenthesis"
-        if ((widthScaleFactor != 1) || (heightScaleFactor != 1)) {
+        if (widthScaleFactor != 1 || heightScaleFactor != 1) {
             scale = true;
         }
 
